@@ -1,0 +1,60 @@
+// Home Banner start
+.home-banner{
+    h1{ @apply mt-12 mb-7;
+      b{@apply font-bold font-roboto;}  
+    }
+    span{@apply leading-6;}
+    a.btn{
+        @apply bg-yellow inline-block text-gray-extraDark text-lg md:text-[23px] p-[9px] xs:p-[13.5px] rounded-[3px] shadow-[0px_4px_0px_rgba(178,113,0,1)] mt-[30px] md:mt-[60px] w-[250px] xs:w-[380px] uppercase hover:bg-yellow-light;
+    }
+    ul li:last-child{@apply pl-[42px];}
+}
+
+// Service tabing section start 
+.service-icon.active{
+   .icon{@apply bg-bottom;}
+}
+.service-content{
+  h2{@apply font-bold uppercase text-white;}
+  p{@apply font-light md:text-lg pb-2.5;}
+  .tab-item{
+    &.active{
+      @apply block;
+    }
+    &:nth-child(2) .container:before{@apply left-[10%];}
+    &:nth-child(4) .container:before{@apply left-[calc(27%_-5px)];}
+    &:nth-child(6) .container:before{@apply left-[calc(42%_+2px)];}
+    &:nth-child(8) .container:before{@apply left-[calc(59%_-9px)];}
+    &:nth-child(10) .container:before{@apply left-[74%];}
+    &:nth-child(12) .container:before{@apply left-[calc(90%_-3px)];}
+  }
+}
+
+
+// our-expertise section start 
+.our-expertise{
+  h2{@apply text-2xl lg:text-4xl font-roboto font-medium text-white pt-10 text-center lg:text-left;
+    i{@apply text-h3 lg:text-h2 font-roboto-slab font-thin block;}
+  }
+}
+
+// Featured section start 
+.featured-project{
+  .project-detail{
+    p{@apply text-bodythree text-gray-dark;}
+  }
+  
+}
+
+// overview section start
+.overview-section .overview-left{
+  h2{@apply text-white mb-5 md:mb-10;}
+  .our-features{
+    p{
+      @apply text-bodythree font-light;
+       strong{@apply block font-bold;}
+    }
+   
+  }
+}
+

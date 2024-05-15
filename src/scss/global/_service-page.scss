@@ -1,0 +1,210 @@
+.single-service{
+    h2{@apply text-[44px] leading-[54px];}
+}
+.service-banner{
+    h2{@apply text-white font-thin leading-[54px];}
+    p{@apply text-lg mt-6 mb-7 font-light;}
+}
+.service-detail-point{
+    h3{@apply mb-2.5;}
+    p{@apply font-light text-gray;}
+}
+
+.better-than-rest{
+    p{@apply text-lg mt-2.5 font-light;}
+}
+
+.portfolio-project-wrap{
+    button{@apply w-2.5;}
+    .slick-arrow:before{@apply w-5 h-5 bg-[length:12px_12px];}
+    .slick-next{@apply right-2 lg:-right-[26px] xl:right-[50px];}
+    .slick-prev{@apply  left-2 lg:left-[31%]  xl:left-[37%] z-[1];}
+}
+
+.service-faq{
+    .faq-item{
+       h3{@apply text-base font-light text-black py-2.5 pl-5 pr-[50px] relative;
+        &:before{@apply content-['Q.'] absolute left-0 text-black font-medium;}
+        &:after{ @apply content-[''] w-3.5 h-3.5 bg-[url(../assets/images/arrow-down.png)] bg-cover absolute right-0 top-4;}
+       }
+       &:nth-child(even){
+         @apply mr-auto lg:mr-0 ml-auto;
+       }
+       &.active{
+        h3{@apply after:bg-[url(../assets/images/acc-cross.png)] after:w-[18px] after:h-[18px];}
+        .faq-content{
+           @apply max-h-fit pt-5 pb-2.5;
+        }
+       } 
+    }
+}
+
+
+
+/// Expertise page start 
+.expertise-banner{
+    h2{@apply font-normal text-white mb-5;}
+    p{@apply text-lg;}
+}
+
+.exp-store{
+    
+    img{@apply py-5;}
+
+    ul{
+        @apply space-y-10;
+        li .content{
+        strong{@apply font-medium;}
+        p{@apply font-light text-gray-dark mb-2.5;}
+    }
+    } 
+}
+
+// Expertise Counsliting section
+
+.consulting-left{
+    @apply text-white;
+    h2{@apply text-[40px] text-white mb-[30px] font-roboto font-extralight;}
+    &:before{@apply content-[''] w-[1000px] h-full absolute right-full top-0;}
+    &:after{
+        @apply content-[''] w-2.5 md:w-[138px] h-full md:right-[-137px] absolute top-0;
+        -webkit-clip-path:polygon(0 0,0 136%,34% 0);
+    }
+    p{@apply text-lg font-normal;}
+    &.blue-dark{@apply bg-[#0073aa] before:bg-[#0073aa] after:bg-[#0073aa];}
+    &.green{@apply bg-[#77ae64] before:bg-[#77ae64] after:bg-[#77ae64];}
+    &.blue{@apply bg-[#3b75a5] before:bg-[#3b75a5] after:bg-[#3b75a5];}
+    &.blue-light{@apply bg-[#24a5db] before:bg-[#24a5db] after:bg-[#24a5db];}
+    &.dark{@apply bg-[#252525] before:bg-[#252525] after:bg-[#252525];}
+    &.red{@apply bg-[#d45845] before:bg-[#d45845] after:bg-[#d45845];}
+}
+
+
+// expertise service start
+
+.expertise-service{
+    ul{
+        &.blue-dark li figure{ filter: brightness(0) saturate(100%) invert(28%) sepia(60%) saturate(2523%) hue-rotate(178deg) brightness(90%) contrast(101%);}
+        &.green li figure{ filter: brightness(0) saturate(100%) invert(64%) sepia(10%) saturate(1727%) hue-rotate(60deg) brightness(98%) contrast(82%);}
+        &.blue li figure{filter: brightness(0) saturate(100%) invert(44%) sepia(10%) saturate(2827%) hue-rotate(165deg) brightness(91%) contrast(84%);}
+        &.blue-light li figure{filter: brightness(0) saturate(100%) invert(55%) sepia(92%) saturate(928%) hue-rotate(164deg) brightness(89%) contrast(91%);}
+        &.dark li figure{filter: brightness(0) saturate(100%) invert(8%) sepia(2%) saturate(102%) hue-rotate(314deg) brightness(96%) contrast(83%);}
+        &.red li figure{filter: brightness(0) saturate(100%) invert(44%) sepia(32%) saturate(1164%) hue-rotate(320deg) brightness(94%) contrast(90%);} 
+    }
+}
+
+// expertise-hire
+.expertise-hire{
+    p{@apply text-lg mb-2.5 font-light;}
+}
+
+
+// Product listing page start 
+
+.post-listing{
+    ul.post-categories{
+        li a{
+            @include transition;
+            @apply text-lg border border-gray-dark hover:border-[#02609e] px-[18px] py-[6px] inline-block rounded-md hover:bg-[#02609e] hover:text-white;
+            &.active{@apply bg-[#02609e] text-white border-[#02609e];}
+
+        }
+    }
+    .posts-wrap .post-item{
+        @apply mb-2.5 font-light text-[#5a5a5a];
+    }
+}
+
+
+
+
+/// ABOUT US PAge start 
+.intro-about{
+    h2{@apply text-h3 font-oswald text-[#888] mb-[50px] mt-[5px] md:my-[50px];}
+    p{@apply text-xl leading-[35px] text-gray-dark font-oswald font-light;}
+}
+
+// About social media star 
+.about-social{
+    h2{
+        @apply text-4xl font-roboto font-bold text-gray-dark;
+    }
+   img{@apply text-gray invert-[0.4];}
+}
+
+// Great Team section
+.great-team{
+    p{@apply text-lg text-[#5d5d5d] pt-6 pb-2.5 font-light;}
+    a{@apply text-[#337ab7];}
+
+    li:nth-child(even){
+        figure{@apply order-1;}
+    }
+
+}
+
+
+// Current opening start
+.share-wrap:hover{
+    .share-icon{@apply visible;}
+}
+
+// Newslatter section start 
+.newslatter{
+    p{@apply text-sm md:text-base font-light pt-2.5 pb-5 lg:pb-[30px] xl:pb-2.5 text-white;}
+    form{
+        @apply w-full relative;
+        input[type="email"]{
+            @apply w-full h-[50px] px-3 py-[6px] text-gray text-[15px];
+            &:focus{@apply outline-none;}
+        }
+        input[type="submit"]{
+           @apply bg-yellow text-lg h-[50px] px-[30px] md:px-[75px] uppercase font-bold max-xs:w-full xs:absolute right-0 cursor-pointer;   
+           &:focus{@apply outline-none;}     
+        }
+    }
+}
+
+// Opeaning single page
+
+.great-team h2{@apply md:text-[40px] lg:text-h2; .container p br{@apply max-lg:hidden;}}
+// opening-detail section
+.opening-detail{
+    h3{@apply text-gray-dark mt-[25px] mb-5 font-bold;}
+    p{
+        @apply text-body text-[#5d5d5d] pb-[30px] font-light;
+    }
+    ul{
+        @apply list-disc;
+        li{
+            @apply pb-[13px] ml-[18px] text-[#5d5d5d] font-light;
+        }
+    }
+}
+
+.applyform{
+    @apply w-full h-full fixed left-0 top-0 bg-[#02609ef5] z-20 invisible flex items-center justify-center overflow-y-auto;
+    .upper-part{
+        @apply grid md:grid-cols-2 gap-x-[30px] gap-y-3.5 mb-3.5;
+        p + p{@apply m-0;}
+        
+    }
+    input,select{
+       @apply w-full py-[6px] px-3 bg-white border border-[#dadada] text-[#888] text-sm h-10;
+       &[type="file"]{
+         @apply relative py-[9px];
+         &::file-selector-button{@apply absolute -right-1 cursor-pointer top-0 bg-[#c45230] w-[143px] h-10 text-[15px] text-white border-none;}
+       }
+       &[type="submit"]{@apply btn text-base bg-[#02609e] py-3 w-full md:w-[393px] h-[50px] px-16 text-white uppercase;}
+       &:focus{@apply border-[#0067b1] outline-none; }
+    }
+     select{@apply py-[7px];}
+    .notes{@apply flex flex-wrap gap-3.5 mt-[15px] mb-[25px];
+        p + p{@apply m-0;}
+        span{@apply pl-5 before:absolute relative before:w-[6px] before:h-[6px] before:bg-gray before:left-0 before:top-1/2 before:-mt-[3px] before:rounded-full text-[15px] text-[#5d5d5d];}
+    }
+
+    &.active{
+      @apply visible; 
+    }
+}

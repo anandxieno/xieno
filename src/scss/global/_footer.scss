@@ -1,0 +1,47 @@
+.contact-form-section{
+    p + p{@apply mt-0;}
+    h2{@apply text-white text-center mb-[50px];}
+    h3{@apply text-white text-h3 md:text-[26px] leading-10 lg:leading-[30px] pb-[60px] text-center font-roboto-slab font-light lg:font-normal;}
+    .contact-form{
+    input, select, textarea{
+        @apply bg-[#393b3f] font-normal font-roboto text-base text-[#888] py-[6px] px-3 w-full h-[50px] rounded-md border-2 border-[#393b3f];
+        &:focus{
+            @apply outline-none border-gray;
+        }
+        &[type="submit"]{
+            @apply w-fit bg-yellow border-none text-gray-extraDark min-w-[290px] xs:min-w-[350px] py-3 text-xl mt-[65px] mx-auto text-center;
+        }
+        &[type="checkbox"]{
+            @apply border-2 border-[#d9d9da] w-5 h-5 rounded-[3px];
+        }
+        &[type="file"]{
+            @apply relative py-2.5 text-white;
+            &::file-selector-button{@apply absolute -right-[4px] text-transparent top-0 w-[60px] h-[50px] bg-[#2e3035] bg-no-repeat border-none bg-center bg-[url('../assets/images/upload-icon.svg')] bg-[length:16px];}
+        }
+       
+    }
+    textarea{
+      @apply min-h-[150px] mb-[15px];
+    }
+    label, .wpcf7-list-item-label{@apply text-base text-white font-roboto;}
+    .contact-middle{@apply grid grid-cols-12 mb-5 mt-7;
+        .contact-middle-left{@apply col-span-12 md:col-span-3 pl-3.5 md:pl-0;}
+        .contact-middle-right{@apply col-span-12 md:col-span-9;
+            // .wpcf7-list-item{@apply m-0;}
+        }
+      .wpcf7-checkbox{@apply my-2.5 inline-block; 
+           .wpcf7-list-item-label{@apply relative -top-1 ml-3.5 capitalize;}
+      }
+    }
+    .wpcf7-response-output{@apply text-white font-roboto text-base text-left;}
+    p{@apply text-left;}
+    .wpcf7-not-valid-tip{@apply text-base font-roboto;}
+}
+}
+
+// Footer section 
+.footer_section{
+    img{filter: brightness(0) saturate(100%) invert(99%) sepia(51%) saturate(0%) hue-rotate(182deg) brightness(113%) contrast(100%);}
+    li a{@apply font-light pb-[15px] block;}
+    .disclaimer_content p{@apply text-center text-gray text-xs leading-6 font-light; strong{@apply block text-sm font-light leading-6;}}
+}

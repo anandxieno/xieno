@@ -1,0 +1,66 @@
+body{
+    @apply font-roboto;
+}
+*{
+    @apply m-0 p-0 box-border scroll-smooth leading-[1.2];
+}
+////////////////////////////
+// *{line-height: 1.2 !important;}
+@mixin transition{
+    @apply transition-all duration-300;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{@apply leading-[1.1];}
+
+p+p{@apply mt-5;}
+// button 
+.btn{
+    @apply inline-block;
+    @include transition();
+    &.btn-light-border{@apply text-lg uppercase border border-white rounded-md text-white py-2.5 px-8 hover:bg-white hover:text-gray;}
+    &.action-btn{@apply bg-yellow  text-gray-extraDark text-lg py-2.5 px-10 rounded-md;
+     &.blue{
+       @apply bg-[#02609e] text-white;
+       &-light{
+         @apply bg-transparent border-2 py-2.5 leading-normal border-[#02609e] rounded-none hover:bg-[#02609e] text-[#02609e] hover:text-white;
+       }
+     }
+     &.dark{@apply bg-[#252525] text-white;}
+     &.gray{@apply bg-[#eee];}
+    }
+}
+
+// h1{@apply text-h1}
+h2{@apply text-h2m md:text-h2 text-gray-dark font-light font-roboto-slab;}
+h3{@apply text-xl text-gray font-normal;}
+
+.light{
+    h2,h3{@apply text-white;}
+}
+
+.section-heading{
+    @apply pb-5;
+    h2{@apply pb-6;}
+    p{@apply text-lg text-gray font-light;}
+}
+
+// Slick slider dots
+.slick-dots{
+    @apply flex justify-center mt-[3px];
+    li{
+        @apply w-2.5 h-2.5 mx-[7px] my-[5px] bg-slate-200 rounded-full cursor-pointer;
+        button{@apply invisible;}
+        &.slick-active, &:hover{@apply bg-gray-400;}
+    }
+}
+.slick-arrow{@apply absolute top-1/2 invisible -mt-[30px] -left-10 xl:-left-[60px] 2xl:-left-[90px];
+    &:before{@apply content-[''] relative block w-[60px] h-[60px] rotate-180 bg-[#D6D6D6] hover:bg-sky-700 bg-[url('../assets/images/collapse-arrow-right.png')] bg-no-repeat bg-center bg-[length:21px_30px] rounded-full p-2 visible;}
+    &.slick-next{@apply left-auto -right-10 xl:-right-[60px] 2xl:-right-[90px] before:rotate-0;}
+}
+
+// Overlay 
+.overlay{ @apply shadow-[inset_0_0_0_1000px_#1d1d1dd9];}
+
+
+
+

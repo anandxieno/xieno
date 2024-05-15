@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './global/typrography';
+@import './global/header';
+@import './global/footer';
+@import './global/front-page';
+@import './global/service-page';
